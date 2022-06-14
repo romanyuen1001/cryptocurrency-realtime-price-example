@@ -3,7 +3,7 @@ const fetch = require("node-fetch")
 const app = express()
 
 // Required API doesn't work
-app.get("/api3", async (req, res) => {
+app.get("/cryptonator/eth-usd", async (req, res) => {
     try {
         const res = await fetch('https://api.cryptonator.com/api/ticker/eth-usd');
         const data = await res.json();
@@ -29,7 +29,7 @@ app.get("/monero", (req, res) => {
     res.json({"ticker":{"base":"XMR","target":"USD","price":"122.70862424","volume":"120443.89741795","change":"0.58327060"},"timestamp":1655198224,"success":true,"error":""})
 })
 
-app.get("/getTargetedCoinsPrice", (req, res) => {
+app.get("/getTargetedCoinsDetails", (req, res) => {
     res.json({
             ticker: [
               {

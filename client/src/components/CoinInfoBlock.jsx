@@ -2,9 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-let colorOfChangeCss = [];
-var x = 10
-
 const CoinInfoBlock = ({
     base,
     price,

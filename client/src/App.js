@@ -9,7 +9,7 @@ function App() {
   const [coinsData, setCoinsData] = useState([{}])
 
   useEffect(() => {
-    fetch("/getTargetedCoinsPrice").then(
+    fetch("/getTargetedCoinsDetails").then(
       response => response.json()
     ).then(
       data => {
@@ -18,11 +18,11 @@ function App() {
     )
   }, [])
 
-  let items2 = coinsData.ticker;
+  let coinsDataList = coinsData.ticker;
   let coinInfoBlockList = [];
-  items2?.forEach((item, index)=>{
+  coinsDataList?.forEach((item, index)=>{
     coinInfoBlockList.push(
-      <CoinInfoBlock key={index}
+      <CoinInfoBlock key = {index}
         base = {item.base}
         price = {item.price}
         volume = {item.volume}
