@@ -1,0 +1,46 @@
+.frame {
+  outline: solid;
+  margin: 56px;
+  padding: 48px;
+}
+
+.coinInfoBlock {
+  outline: solid;
+  outline-color: #c2bdbd;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.topicSentence {
+  margin-bottom: 36px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.colorOfPrice {
+  color: orange;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.colorOfChangeRed {
+  color: red;
+}
+
+.colorOfChangeGreen {
+  color: green;
+}
+
+.colorOfNormalText {
+  color: #505050;
+  font-size: 16px;
+}
+
+.colorOfVolumeVal {
+  color: #707070;
+}
