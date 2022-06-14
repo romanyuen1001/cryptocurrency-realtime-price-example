@@ -54,12 +54,12 @@ app.get("/getTargetedCoinsDetails", (req, res) => {
                 change: "-0.09024846"
               },
               {
-                "base": "XMR",
-                "target": "USD",
-                "price": "122.70862424",
-                "volume": "120443.89741795",
-                "change": "0.58327060"
-              }
+                base: "XMR",
+                target: "USD",
+                price: "122.70862424",
+                volume: "120443.89741795",
+                change: "0.58327060"
+              },
             ]
       })
 })
