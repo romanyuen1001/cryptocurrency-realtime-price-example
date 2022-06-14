@@ -9,13 +9,15 @@ function App() {
   const [coinsData, setCoinsData] = useState([{}])
 
   useEffect(() => {
-    fetch("/getTargetedCoinsDetails").then(
-      response => response.json()
-    ).then(
-      data => {
-        setCoinsData(data)
-      }
-    )
+    const intervalId = setInterval(() => {
+      fetch("/getTargetedCoinsDetails").then(
+        response => response.json()
+      ).then(
+        data => {
+          setCoinsData(data)
+        }
+      )
+    }, 5000)
   }, [])
 
   let coinsDataList = coinsData.ticker;
